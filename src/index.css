@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap');
+html {
+  background-image: url(https://cdn.hipwallpaper.com/i/84/79/D58NtU.jpg);
+  background-size: cover;
+
+}
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.575);
+}
+
+.rss1{
+  position: relative;
+  display: inline-block;
+  padding: 15px 50px;
+  color: #f32121;
+  text-decoration: none;
+  font-size: 40px;
+  overflow: hidden;
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: rgba(0, 0, 0, 0);
+}
+
+.rss1:hover{
+  color: #842525;
+  background: #ff0000;
+  box-shadow: 0 0 10px #f32121, 0 0 40px #f32121, 0 0 80px #f32121
+}
+
+.rss2{
+  position: relative;
+  display: inline-block;
+  padding: 15px 50px;
+  color: #2ff321;
+  text-decoration: none;
+  font-size: 40px;
+  overflow: hidden;
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: rgba(0, 0, 0, 0);
+}
+
+.rss2:hover{
+  color: #308425;
+  background: #2ff321;
+  box-shadow: 0 0 10px #21f333, 0 0 40px #3af321, 0 0 80px #21f321
+}
+
+div {
+  text-align:center;
+  position:absolute;
+  width:250px;
+  top:140px;
+  left:40%;
+  margin: -50px 0 0 -150px;
+  animation: border-flicker 2s linear infinite;
+}
+
+#h2 {
+  font-family: 'Allerta Stencil' ;
+  color:rgb(255, 0, 0);
+  font-size:140px;
+  letter-spacing:10px;
+  animation: text-flicker 3s linear infinite;
+  margin: 0px;
+}
+
+.offset {
+  animation: letter-flicker 4s linear infinite;
+  
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1);
+  }
+  
+  2% {
+    opacity:1;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1);
+  }
+  8% {
+    opacity:0.1;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1);
+  }
+  9% {
+    opacity:1;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1);
+  }
+  12% {
+    opacity:0.1;
+    text-shadow: 0px 0px  rgba(242, 22, 22, 1);
+  }
+  20% {
+    opacity:1;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1)
+  }
+  25% {
+    opacity:0.3;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1)
+  }
+  30% {
+    opacity:1;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1)
+  }
+  
+  70% {
+    opacity:0.7;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1)
+  }
+  
+  72% {
+    opacity:0.2;
+    text-shadow:0px 0px 70px rgba(242, 22, 22, 1)
+  }
+  
+  77% {
+    opacity:.9;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1)
+  }
+  100% {
+    opacity:.9;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1)
+  }
+}
+
+@keyframes letter-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1);
+  }
+  2% {
+    opacity:0.1;
+    text-shadow:0px 0px 70px rgba(242, 22, 22, 1);
+  }
+  4% {
+    opacity:1;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1);
+  }
+  
+  
+  19% {
+    opacity:1;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1);
+  }
+  21% {
+    opacity:0.1;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1);
+  }
+  23% {
+    opacity:1;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1);
+  }
+  
+  80% {
+    opacity:1;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1);
+  }
+  83% {
+    opacity:0.4;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1);
+  }
+  87% {
+    opacity:1;
+    text-shadow: 0px 0px 70px rgba(242, 22, 22, 1);
+  }
+}
