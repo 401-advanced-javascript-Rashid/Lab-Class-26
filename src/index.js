@@ -11,11 +11,13 @@ class Counter extends React.Component {
     }
 
     increment() {
-        this.setState({ conut: this.state.conut + 1 })
+        let counter = this.state.conut;
+        this.setState({ conut: counter + 1 })
     }
 
     decrement() {
-        this.setState({ conut: this.state.conut - 1 })
+        let counter = this.state.conut;
+        this.setState({ conut: counter - 1 })
     }
 
     render() {
@@ -26,8 +28,8 @@ class Counter extends React.Component {
                         <h2 id="h2">Cou<span id="offset">nter[{this.state.conut}]</span></h2>
                     </div>
                 </div>
-                <a class="rss2" onClick={() => this.increment()}>+</a>
-                <a class="rss1" onClick={() => this.decrement()}>-</a>
+                <button class="rss2" onClick={() => this.increment()}>+</button>
+                <button class="rss1" onClick={() => this.decrement()}>-</button>
             </section>
 
         );
